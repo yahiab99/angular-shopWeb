@@ -1,0 +1,18 @@
+.icons{
+    padding-left: 5px;
+    width: 40px; 
+}
+.mt-3{
+    text-align: right;
+}
+.col-lg-5{
+    text-align: right;
+    margin-left: 35px;
+}
+.col-lg-4{
+   margin-left: 80px;
+
+}
+.pb-4{
+    background: linear-gradient(180deg, #9acacd 10%, hsl(204, 41%, 21%) );
+}

@@ -1,0 +1,35 @@
+<section class="main-se">
+    <!-- main content -->
+    <main>
+        <!-- the slider show -->
+        <div class="slider" *ngIf="main2Display"> 
+            <app-slider></app-slider>
+        </div>
+        <!-- type 1 of category show -->
+        <div class="shopping1" *ngIf="shopping1Display">
+            <app-shopping1 class="flex-items"></app-shopping1>    
+        </div>
+        <!-- type 2 of category show -->
+        <div class="shopping2" *ngIf="shopping2Display">
+            <app-shopping2 class="flex-items"></app-shopping2>
+        </div>
+    </main>
+    <!-- aside content -->
+    <aside>
+       <div id="ca_d">
+           <h1> קטיגוריה</h1>
+           <a routerLink="/" (click)="gotoShopping1()" class="ca">ריהוט</a><br><br>
+           <a routerLink="/" (click)="gotoShopping2()" class="ca"> מוצרים חד פעמים</a><br><br><br><br>
+           <a>בחר קטיגורית המוצר שאתה רוצה</a>
+        </div> 
+        
+    </aside>
+    
+
+</section>
+
+<div class="map" href="#">
+   <a href="#"><img [src]="map1"></a>
+</div>
+<app-footer></app-footer>
+

@@ -1,0 +1,14 @@
+{
+    "number": "3.2",
+    "developer": "Itamar Lachman",
+    "changes": [
+        {
+            "number": "1",
+            "description": "create project"
+        },
+        {
+            "number": "1.1",
+            "description": "update project"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+<div class="signup-window">
+    <div class="signup-content">
+        <img [src] = "enterpng" class="exit1" id="exit1" (click) = "exitSignup()">
+        <div id="person-details">
+            
+            <div class="row">
+                <input type="text" placeholder="שם פרטי" id="first-name" class="inputs" [(ngModel)]="user.firstName">
+                <label>: שם פרטי</label>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="שם משפחה" id="last-name" class="inputs" [(ngModel)]="user.lastName">
+                <label >: שם משפחה</label>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="ת.ז" pattern="[0-9]{9}" id="id" class="inputs" [(ngModel)]="user.id">
+                <label>: ת.ז</label>
+            </div> 
+            <div class="row">
+                <input type="tel" placeholder="000-0000000" pattern="[0-9]{10}" required  id="phone" class="inputs" [(ngModel)]="user.phone">
+                <label>: נייד</label>
+            </div> 
+            <div class="row">
+                <input type="email" placeholder="דואר אלקטרוני" id="email" class="inputs" [(ngModel)]="user.mail">
+                <label>: מייל</label>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="שם משתמש" id="user-name" class="inputs" [(ngModel)]="user.userName">
+                <label>: שם משתמש</label>
+            </div>
+            <div class="row">
+                <input type="password" placeholder="סיסמה" id="user-password" class="inputs" [(ngModel)]="user.userPassword">
+                <label>: סיסמה</label>
+            </div>
+        </div>
+        <div id="person-address">
+            <div class="row">
+                <input type="text" placeholder="עיר" style="margin-right: 16px;" id="city" class="inputs" [(ngModel)]="user.city">
+                <label>: עיר</label>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="כתובת" id="address" class="inputs" [(ngModel)]="user.address">
+                <label>: כתובת</label>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="רחוב" style="margin-right: 8px;" id="street" class="inputs" [(ngModel)]="user.street">
+                <label>: רחוב</label>
+            </div>
+            
+        </div>
+        
+        <button id="buttonclear" (click)="clean()" class="btn btn-secondary">נקה</button>
+        <input type="submit" id="buttonsignup" (click)="addUser2()">
+    </div>
+</div>

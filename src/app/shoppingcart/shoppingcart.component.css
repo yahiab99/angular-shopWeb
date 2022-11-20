@@ -1,0 +1,351 @@
+.shoppingcart{
+    background: linear-gradient(60deg, #9acacd 10%, hsl(204, 41%, 21%) );
+    border-radius: 20px;
+}
+.exit1{
+    position:absolute;
+    left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    width: 50px; 
+    height: 50px; 
+
+}
+.products{
+    text-align: right;
+    margin-top: 50px;
+    width: 190px;
+}
+.shipping{
+    text-align: right;
+    margin-top: 40px;
+    margin-left: 1600px;
+    width: 190px;
+}
+.pay{
+    text-align: right;
+    margin-top: 40px;
+    margin-left: 1600px;
+    width: 190px;
+}
+#bproducts{
+    background: rgb(184, 198, 205);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 25px;
+    width: 185px;
+    
+}
+#bproducts img{
+    width: 30px;
+}
+#bshipping{
+    background: rgb(184, 198, 205);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 25px;
+    width: 185px;
+}
+#bshipping img{
+    width: 30px;
+}
+#bshipping a{
+    margin-left: 60px;
+}
+#bpay{
+    background: rgb(184, 198, 205);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 25px;
+    width: 185px;
+}
+#bpay img{
+    width: 30px;
+}
+#bpay a{
+    margin-left: 60px;
+}
+.products-show{
+    background-color: white;
+    width: 500px; height: 500px; 
+    margin-left: 1120px; 
+    margin-top: -30px;
+    border-radius: 40px;
+    grid-template-columns: 2;
+    
+    
+}
+.sum-btn{
+    margin-top: 100px;
+    margin-left: 70px;
+    width: 70%;
+    height: 50px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: linear-gradient(180deg, #9acacd 10%, hsl(204, 41%, 21%) );;
+    border-radius: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+.sum-btn:hover{
+    opacity: 1;
+}
+.cart-t{
+    margin-left: 200px;
+}
+.products-show-content{
+    height: 500px;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+.products-show-content::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+    flex: 0 0 auto;
+    width: 220px;
+    height: 200px;
+    margin-left: 70px;
+    margin-top: 20px;
+    
+ }
+ 
+ .product-img{
+     position: relative;
+     width: 200px;
+     height: 100px;
+     overflow: hidden;
+ }
+ .price{
+     margin-left: 20px;
+ }
+ .quantity-input{
+     width: 40px;
+     margin-left: 100px;
+     
+ }
+ .product1{
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+ }
+ .product2{
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+ }
+ .remove-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+ }
+ .remove-btn:hover{
+    opacity: 1;
+}
+ 
+.shipping-show{
+    background-color: rgb(184, 198, 205);
+    width: 500px; height: 500px; 
+    margin-top: -20px;
+    border-radius: 40px; 
+}
+.shipping-show-con{
+    display: block;
+}
+.shipping-show-con input{
+    text-align: right;
+}
+.shipping-show-con textarea{
+    vertical-align: top; 
+    text-align: right;
+    height: 70px;
+    width: 189px;
+}
+#slc-btn{
+    width: 30px;
+    height: 20px;
+}
+.pay-show{
+    background-color: rgb(184, 198, 205);
+    width: 500px; height: 500px; 
+    margin-left: 1120px; 
+    margin-top: -35px;
+    border-radius: 40px;
+}
+.shipping-show-selector{ 
+    text-align: right;
+    padding-right: 15px;
+    height: 70px;
+}
+.shipping-show-selector select{
+    margin-top: 20px;
+    text-align: right;
+    padding: 10px 15px;
+    height: 46px;   
+    font-size: 16px;
+    border-radius: 40px;
+    background-color: rgb(184, 198, 205);
+    border: solid rgb(32, 89, 118);
+}
+.shipping-show-selector select:focus{
+    color: rgb(209, 143, 143);
+}
+.shipping-1 input{
+    margin-right: 10px;
+}
+.shipping-1 textarea{
+    margin-right: 10px;
+}
+.shipping-2 select{
+    margin-left: 150px;
+}
+#bnext{
+    margin-top: 50px;
+    background: rgb(184, 198, 205);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 25px;
+    width: 100px;
+}
+.shipping-2{
+    height: 300px;
+    width: 300px;    
+    margin-left: 190px;   
+    text-align: right;
+    
+}
+
+.shipping-1 div{
+    margin-top: 20px;
+}
+
+.pay-show-h{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    height: 50px;
+    width: 400px;
+    font-size: 2.5em;
+    color: rgb(32, 89, 118);
+    margin-bottom: 20px;
+}
+.row{
+    height: 20px;
+    width: 300px; 
+    margin-top: 30px; 
+    margin-left: 150px;
+}
+.row label{
+    margin-left: 20px;
+}
+.pay-show label{
+    margin-right: 10px;
+}
+.pay-show input{
+    margin-right: 10px;
+}
+.pay-show img{
+    width: 40px;
+}
+#pay1{
+    background: rgb(62, 61, 61);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 22px;
+    padding: 10px;
+    margin-top: 50px;
+    width: 100px;
+    margin-right: 310px;
+}
+
+@media screen and (max-width: 1920px){
+    .products{
+        margin-left: 1000px;
+    }
+    .shipping{
+        margin-left: 1000px;
+    }
+    .pay{
+        margin-left: 1000px;
+    }
+    .products-show{
+        margin-left: 520px;
+    }
+    .shipping-show{
+        margin-left: 520px;
+    }
+    .pay-show{
+        margin-left: 520px;
+    }
+    .exit1{
+        bottom: 500px;
+    }
+}
+@media screen and (min-width: 1920px){
+    .products{
+        margin-left: 1400px;  
+    }
+    .shipping{
+        margin-left: 1400px;
+    }
+    .pay{
+        margin-left: 1400px;
+    }
+    .products-show{
+        margin-left: 920px;
+    }
+    .shipping-show{
+        margin-left: 920px;
+    }
+    .pay-show{
+        margin-left: 920px;
+    }
+    .exit1{
+        bottom: 730px;
+    }
+}
+@media (min-width: 393px) and (max-width: 1170px){
+    .products{
+        margin-left: 700px;
+    }
+    .shipping{
+        margin-left: 700px;
+    }
+    .pay{
+        margin-left: 700px;
+    }
+    .products-show{
+        margin-left: 220px;
+    }
+    .shipping-show{
+        margin-left: 220px;
+    }
+    .pay-show{
+        margin-left: 220px;
+    }
+    .exit1{
+        bottom: 1100px;
+    }
+}

@@ -1,0 +1,17 @@
+<div class="header">
+  <nav>
+    <ul>
+      <a class="aa" routerLink="/shoppingcart"><img [src]="cartpi" id="cartpi"/></a>
+      <a class="aa" routerLink="/" *ngIf="disCdisplay" (click)="disconnect()">התנתק</a>
+      <a class="aa" id="usern" *ngIf="userdisplay">{{userConnected[0]}}</a>
+      <a class="aa" routerLink="/login" id="login-button" *ngIf="logindisplay">התחבר</a>
+      <a class="aa" routerLink="/signup" id="signup-button" *ngIf="signupdisplay">הרשמה</a>
+      <a class="aa"><img [src]="userpi" id="userpi"/></a>
+    </ul>
+  </nav> 
+
+  <div id="divph">
+    <a href="#"><img [src]="plastic" id="plastic-ph" (click)="main()"></a>
+    <h1> plastic shop </h1>                
+  </div>
+</div>

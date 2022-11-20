@@ -1,0 +1,49 @@
+.scroller{
+    margin-top: 50px;
+    margin-left: 100px;
+    
+}
+.card{
+    border: none;
+}
+.card-img-top{
+    width: 200px;
+    height: 200px;
+}
+.card-btn{
+    width: 90%;
+    height: 50px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: linear-gradient(180deg, #9acacd 10%, hsl(204, 41%, 21%) );;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+.card-btn:hover{
+    opacity: 1;
+}
+.remove-btn{
+    margin-left: 200px;
+    background-color: white;
+    transform: translateY(-550%);
+    width: 30px;
+    height: 30px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 1;
+    
+}
+.remove-btn:hover{
+    opacity: 1;
+}
+
+.quantity-input{
+    width: 40px;
+    margin-left: 150px;
+    
+}

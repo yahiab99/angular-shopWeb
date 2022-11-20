@@ -1,0 +1,113 @@
+#person-details{
+    background: linear-gradient(180deg, #9acacd 10%, hsl(204, 41%, 21%) );
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: -10px 20px 5px rgba(0,0,0, 0.3) ;
+    margin-left: 100px;
+    margin-top: 100px;
+    
+
+}
+#person-address{
+    background: linear-gradient(180deg, #9acacd 10%, hsl(204, 41%, 21%) );
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: -10px 20px 5px rgba(0,0,0, 0.3) ;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.signup-window{
+    width: 10px;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-content{
+    width: 500px;
+    height: 600px;
+    border-radius: 4px;
+    text-align: right;
+    padding: 10px;
+    position: relative;
+    background: linear-gradient(180deg, #9acacd 10%, hsl(204, 41%, 21%));
+   
+}
+#person-details{
+    margin-left: 180px; 
+    margin-top: 20px;
+    width: 300px;
+    padding-left: 20px;
+   
+}
+.input-t{
+    text-align: right;
+}
+.row{
+    margin-bottom: 10px;
+    text-align: right;
+}
+.inputs{
+    text-align: right;
+    margin-right: 10px;
+}
+#person-address{
+    margin-left: 180px;
+    padding-left: 30px;
+}
+.exit1{
+    position:absolute;
+    bottom: 0;
+    left: 5px;
+    font-size: 40px;
+    cursor: pointer;
+    width: 50px; 
+    height: 50px; 
+
+}
+#buttonsignup{
+    background: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 22px;
+    padding: 10px;
+}
+.btn-secondary{
+    background: black;
+    margin-right: 200px;
+    border-radius: 20px;
+    border-color: black;
+}
+
+@media screen and (max-width: 1920px){
+    .signup-content{
+        margin-left: 600px;
+        background: linear-gradient(180deg, #22292a 10%, hsl(204, 41%, 21%) );
+        margin-top:  140px;
+    }
+}
+@media screen and (min-width: 1920px){
+    .signup-content{
+        margin-left: 930px;
+        background: linear-gradient(180deg, #9acacd 10%, hsl(204, 41%, 21%) );
+    }
+}
+@media (min-width: 392px) and (max-width: 1170px){
+    .signup-content{
+        margin-left: 200px;
+        margin-top: 120px;
+        background: linear-gradient(180deg, #9acacd 10%, hsl(204, 41%, 21%) );
+        
+    }
+    label{
+        font-weight: bold;
+    }
+}

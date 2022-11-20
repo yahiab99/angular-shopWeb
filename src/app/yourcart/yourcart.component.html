@@ -1,0 +1,15 @@
+<div class="scroller" style="width: 18rem;" *ngFor="let s of sale">
+    
+    <div class="card">
+      <span><img class="card-img-top" [src]="s.image1" alt="Card image cap"></span>
+      <span>
+          <button class="remove-btn" (click)="remove(s)">
+             <img [src]="t" alt="">
+          </button>
+      </span>  
+      <h2 class="card-title">{{s.title1}}</h2>
+      <span class="card-text">{{s.price1}}</span>
+      <span><input type="number" class="quantity-input" id="{{s.i}}" value="1"></span>
+    </div>
+</div>
+

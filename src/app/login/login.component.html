@@ -1,0 +1,19 @@
+<div class="login-window">    
+    <div class="login-content">
+        <img [src] = "enterpng" class="exit" id="exit" (click)="exitLogin()">
+        <img [src] ="user01" class="user01">
+        
+        <div class="row">
+            <input type="text" placeholder="שם משתמש" class="user-input" id="user-input1" [(ngModel)]="user.userName">
+            <label> שם משתמש</label>
+        </div>
+            
+        <div class="row">
+            <input type="password"  placeholder="*********" class="password-input" id="password-input1" [(ngModel)]="user.userPassword">
+            <label>סיסמה</label>
+        </div>
+     
+        <button id="buttonin" (click)="login()" class="btn btn-secondary">כניסה</button>
+        
+    </div>
+</div>

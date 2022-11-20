@@ -1,0 +1,120 @@
+
+    <div class="shoppingcart">
+        <img [src] = "enterpng" class="exit1" id="exit1" (click) = "exitCart()">
+        <div class="products">
+            
+            <button id="bproducts" (click)="clickProductsDisplay()">
+                <span>
+                    <img [src]="backbutton">
+                    <a>המוצרים שלך</a>
+                </span>
+            </button>
+        </div>
+        <div *ngIf="productsDisplay" class="products-show" id="products-show">
+            
+            <div class="products-show-content" id="products-scroll">
+                
+                <app-yourcart  class="flex-items"></app-yourcart>
+                <button class="sum-btn" (click)="sum()"> ס"ה {{sum_p}}</button>
+            </div>
+        </div>    
+
+        <div class="shipping">
+            <button id="bshipping" (click)="clickShippingDisplay()">
+                <span>
+                    <img [src]="backbutton">
+                    <a>משלוח</a>
+                </span>
+            </button>
+        </div>
+        
+        <div *ngIf="shippingDisplay" class="shipping-show" id="shipping-show">
+            <div class="shipping-show-con">
+        
+                <div class="shipping-show-selector">
+                    <select id="Sbox" (change)="onChange($event)">    
+                        <option *ngFor="let option of options" [value]="option">{{option}}</option>
+                    </select>
+                </div>
+                <div class="shipping-1" id="shipping-1" *ngIf="shipping1Display">
+                    <div class="row">
+                        <input type="text">
+                        <label> עיר</label>
+                    </div>
+                    <div class="row">
+                        <input type="text">
+                        <label> רחוב</label>
+                    </div>
+                    <div class="row">
+                        <input type="text">
+                        <label>מס בית</label>
+                    </div>
+                    
+                    <div class="row">
+                        <textarea rows="5" cols="21">
+
+                        </textarea>
+                        <label> הערות </label>
+                    </div>
+                    <div>
+                        <button id="bnext">המשך</button>
+                    </div>
+                </div>
+                <div class="shipping-2" id="shipping-2" *ngIf="shipping2Display">
+                    <div class="shipping-show-selector">
+                        <select>
+                            <option *ngFor="let branch of branches" [value]="branch">{{branch}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pay">
+            <button id="bpay" (click)="clickPayDisplay()">
+                <span>
+                    <img [src]="backbutton">
+                    <a>תשלום</a>
+                </span>
+            </button>
+        </div>
+ 
+        <div *ngIf="payDisplay" class="pay-show" id="pay-show">
+            <div style="text-align: right;">
+                <div class="pay-show-h">
+                    <a> ביצוע תשלום </a>
+                </div>
+                <span>
+                    <label id="sump">{{sum_p}}</label>
+                    <label> ס"ה</label>
+                </span>
+                
+                <div class="row">
+                    <input type="text">
+                    <img [src]="debitcard">
+                </div>
+                <div class="row">
+                    <input type="text">
+                    <img [src]="schedule">
+                </div>
+                <div class="row">
+                    <input type="text">
+                    <img [src]="cvv">
+                </div>
+                <div class="row">
+                    <input type="number">
+                    <img [src]="numbers">
+                </div>
+                <button id="pay1" (click)="pay()">
+                    בצע
+                </button>
+            </div>
+
+        </div>
+           
+    </div>
+
+
+
+
+
